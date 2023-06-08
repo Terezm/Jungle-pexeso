@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./card.css";
 
-export const Card = ({ img, switch, onTurn }) => {
+export const Card = ({ img, switch , onTurn }) => {
     const [isSwitch, setIsSwitch] = useState(true);
    
 
-    const className = switch ? "card switch" : "card";
+    const className = isSwitch ? "card switch" : "card";
 
     return (
         <button
