@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card } from "./Card";
+import { card } from "./card";
 import "./game.css";
 
 const cards = [];
