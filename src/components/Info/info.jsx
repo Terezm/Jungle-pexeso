@@ -86,9 +86,9 @@ export const Info = () => {
     diet: "Maso (loví převážně jeleny, losy)"
   },
   {
-    name: "Kočkodan",
-    description: "Kočkodan je africká antilopa s výraznými bílými pruhy na těle a dlouhými rohatými zákrsky u samců.",
-    habitat: "Subsaharská Afrika",
+    name: "Klokan",
+    description: "Klokan je skákavý savec se silnými zadními končetinami a dlouhým ocasem. Je známý svou schopností přeskočit velké vzdálenosti pomocí skoků.",
+    habitat: "Austrálie a okolní ostrovy",
     diet: "Tráva, listy, výhonky"
   },
   {
@@ -113,11 +113,11 @@ export const Info = () => {
   },
 
   {
-    name: "Žralok bílý",
-    description: "Žralok bílý je velká mořská šelma se silnými čelistmi a bílou břišní stranou těla. Je známý svou mocí a sílou.",
-    habitat: "Oceány po celém světě",
-    diet: "Ryby, tuleňi, mořské savce"
-  },
+    name: "Bizon",
+  description: "Bizon je velký savec z čeledi turovitých. Má robustní tělo, silné končetiny a výrazný hrb na zádech. Je známý svou masivností a imponujícími rohy u obou pohlaví.",
+  habitat: "Severní Amerika (hlavně prérie a lesnaté oblasti)",
+  diet: "Tráva, byliny, větvičky, listy"
+},
 
   {
     name: "Krokodýl nilský",
@@ -132,11 +132,11 @@ export const Info = () => {
     diet: "Maso (loví převážně jeleny, kapybary)"
   },
   {
-    name: "Kanguru",
-    description: "Kanguru je velký vačnatý savec se silnými zadními končetinami, které používá ke skákání. Je známý svou rychlostí a agilitou.",
-    habitat: "Austrálie a okolní ostrovy",
-    diet: "Byliny, tráva, listy, výhonky"
-  },
+  name: "Kapybara",
+  description: "Kapybara je největší žijící hlodavec na světě. Má robustní tělo, krátké nohy a charakteristicky ploché uši. Je známá svou společenskou povahou a schopností žít ve velkých skupinách.",
+  habitat: "Bažiny, pobřežní oblasti a říční nivy v Jižní Americe",
+  diet: "Tráva, vodní rostliny, listy, kůra"
+},
 
   {
     name: "Surikata",
@@ -186,9 +186,7 @@ export const Info = () => {
     habitat: "Lesy a parky po celém světě",
     diet: "Ořechy, semena, plody, pupeny"
   },
-  {
-
-  
+  { 
   name: "Černý panter",
   description: "Černý panter je melanistická forma leoparda nebo jaguára, která má černé zbarvení. Je známý svou elegancí, sílou a loveckými schopnostmi.",
   habitat: "Různé typy lesů a horské oblasti",
