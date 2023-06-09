@@ -201,8 +201,8 @@ export const Info = () => {
         <h1>Zvířata</h1>
         {animals.map((animal, index) => (
           <div key={index}>
-            <h2>{animal.name}</h2>
-            <p>{animal.description}</p>
+            <h2>Jméno:{animal.name}</h2>
+            <p>Popis:{animal.description}</p>
             <p>Místo výskytu: {animal.habitat}</p>
             <p>Strava: {animal.diet}</p>
           </div>
