@@ -25,7 +25,7 @@ export function Index() {
         </div>
       </div>
 
-      <Link to="/pexeso" className="index-button_pexeso">
+      <Link to="/game-settings" className="index-button_pexeso">
         Pexeso
       </Link>
       <Link

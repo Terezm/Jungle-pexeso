@@ -1,23 +1,3 @@
-html {
-  box-sizing: border-box;
-}
-
-*,
-::after,
-::before {
-  box-sizing: inherit;
-}
-
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 1.2em;
-  }
-}
-
-body {
-  min-height: 100vh;
-  font-family: Arial, "Helvetica Neue", Helvetica,
-}
 
 
 .lexicon-containter {
