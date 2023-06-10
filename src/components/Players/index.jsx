@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
-
+import { useNavigate } from 'react-router-dom';
 
 // export const Players = () => {
 //     return (
@@ -15,15 +14,12 @@ import { useHistory } from 'react-router-dom';
 //         <Link to="/">Zahraju si s kamarádem</Link>
 //       </nav>
 //     </div>
-        
-       
+
 //     )
 // }
 
-
-
 const GameModeSelection = () => {
-  const history = useHistory();
+  const history = useNavigate();
   const [selectedMode, setSelectedMode] = useState('');
 
   const handleModeSelection = (mode) => {
