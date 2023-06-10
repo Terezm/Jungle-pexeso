@@ -14,9 +14,16 @@ html {
   }
 }
 
+.index-container {
+  height: 800px;
+  display: grid;
+  grid-template-columns: 1fr 300px 300px 325px;
+  grid-template-rows: 1fr 300px 300px 325px;
+  background-image: url('./main.svg');
+  background-size: cover;
+}
 
-
-.desktop {
+.index-desktop {
   display: grid;
   grid-column-start: 2;
   grid-column-end: 4;
@@ -28,7 +35,7 @@ html {
   background-size: cover;
 }
 
-.description {
+.index-description {
   grid-row: 2/3;
   grid-column: 2/span 2;
   width: 500px;
@@ -42,7 +49,7 @@ html {
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
-.sloth {
+.index-sloth {
   grid-column-start: 4;
   grid-row: 1;
   width: 325px;
@@ -52,7 +59,7 @@ html {
   border-radius: 20%;
 }
 
-.button_pexeso {
+.index-button_pexeso {
   grid-column: 2;
   grid-row: 3;
   background-color: #56805a;
@@ -68,7 +75,7 @@ html {
   text-align: center;
 }
 
-.button_lexikon {
+.index-button_lexikon {
 
   grid-column: 3;
   grid-row: 3;
@@ -87,12 +94,12 @@ html {
 
 }
 
-.button_lexikon:hover {
+.index-button_lexikon:hover {
   background-color: #E5970F;
 
 }
 
-.button_pexeso:hover {
+.index-button_pexeso:hover {
   background-color: #E5970F;
 
 }
@@ -104,7 +111,7 @@ footer {
   height: 20px;
 }
 
-.logo {
+.index-logo {
   display: inline-block;
   grid-column: 1;
   grid-row: span 2;

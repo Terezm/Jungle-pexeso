@@ -1,0 +1,109 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 1.2em;
+  }
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, "Helvetica Neue", Helvetica,
+}
+
+
+.lexicon-containter {
+  display: grid;
+  height: 800px;
+  grid-template-columns: 380px 300px 300px;
+  grid-template-rows: 380px 300px 300px;
+  background-image: url('./background.svg');
+  background-size: cover;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  flex-wrap: nowrap;
+}
+
+img {
+  display: grid;
+  grid-row: 1;
+  grid-column: 2/4;
+  background-size: cover;
+  margin-top: 80px;
+  border-radius: 15% 15% 0% 0%;
+  height: 330px;
+  width: 600px;
+  border: solid 5px white;
+
+}
+
+.lexicon-description {
+  grid-row: 2/3;
+  grid-column: 2/span 2;
+  width: 600px;
+  height: 210px;
+  border: 5px solid white;
+  border-radius: 0% 0% 10% 10%;
+  padding: 15px;
+  background-color: whitesmoke;
+
+}
+
+.lexicon-description {
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.lexicon-levy_sloupec {
+  grid-row: 1/-1;
+  width: 200px;
+  height: 100%;
+  background-image: url('./frame.jpg');
+  background-size: cover;
+  border: 5px solid rgba(101, 85, 85, 0.557);
+
+}
+
+.lexicon-levy_sloupec {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
+  color: burlywood
+}
+
+
+
+.lexicon-odrazkove-seznam {
+  padding: 10px;
+  font-size: 17px;
+  text-align: justify;
+  color: burlywood;
+  padding-left: 20px;
+  line-height: 1.5;
+}
+
+.lexicon-sloth {
+  grid-column: 3;
+  background-size: cover;
+  background-image: url('./sloth.svg');
+  height: 130px;
+  width: 150px;
+  border-radius: 30% 0% 0% 0%;
+  margin-block-start: auto;
+  margin-inline-start: auto;
+
+}
