@@ -11,7 +11,7 @@ cards.sort(() => Math.random() - 0.5);
 
 let deduction;
 
-export const Hra = () => {
+export const Game = () => {
   const [firstId, setFirstId] = useState(null);
   const [secondId, setSecondId] = useState(null);
   const [match, setMatch] = useState([]);

@@ -1,5 +1,6 @@
-import React from 'react';
-import './style.css';
+import React from "react";
+import "./style.css";
+import { Link } from "react-router-dom";
 
 export function Index() {
   return (
@@ -24,18 +25,21 @@ export function Index() {
         </div>
       </div>
 
-      <button className="index-button_pexeso">Pexeso</button>
-      <button
+      <Link to="/pexeso" className="index-button_pexeso">
+        Pexeso
+      </Link>
+      <Link
+        to="/lexicon"
         className="index-button_lexikon"
         style={{
-          whiteSpace: 'nowrap',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
+          whiteSpace: "nowrap",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
         Lexikon zvířat
-      </button>
+      </Link>
       <div className="index-sloth"></div>
     </div>
   );
