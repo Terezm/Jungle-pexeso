@@ -1,12 +1,11 @@
 import React from 'react';
-import { Container } from '../../components/Container';
 import './style.css';
 
 export function Index() {
   return (
-    <Container>
-      <div className="desktop">
-        <div className="description">
+    <div className="index-container">
+      <div className="index-desktop">
+        <div className="index-description">
           <h1>Jungle pexeso</h1>
 
           <p>
@@ -25,9 +24,9 @@ export function Index() {
         </div>
       </div>
 
-      <button className="button_pexeso">Pexeso</button>
+      <button className="index-button_pexeso">Pexeso</button>
       <button
-        className="button_lexikon"
+        className="index-button_lexikon"
         style={{
           whiteSpace: 'nowrap',
           display: 'flex',
@@ -37,7 +36,7 @@ export function Index() {
       >
         Lexikon zvířat
       </button>
-      <div className="sloth"></div>
-    </Container>
+      <div className="index-sloth"></div>
+    </div>
   );
 }

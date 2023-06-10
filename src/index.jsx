@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
 import { PexesoPage } from './components/PexesoPage';
 import QuizPage from './components/QuizPage';
 import { Index } from './views/index/index';
+import { Lexicon } from './views/lexicon';
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: '/pexeso',
     element: <PexesoPage />,
+  },
+  {
+    path: '/lexicon',
+    element: <Lexicon />,
   },
   {
     path: '/quiz',
