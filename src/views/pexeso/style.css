@@ -1,4 +1,11 @@
-.pexeso-container {
+.pexeso-container {}
+
+.pexeso-split {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+}
+
+.pexeso-game {
   display: grid;
   gap: 10px;
   max-width: 800px;
