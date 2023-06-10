@@ -35,18 +35,33 @@ body {
   flex-wrap: nowrap;
 }
 
-img {
+.image-container {
+  width: 100%;
+  height: 300px; 
+  overflow: hidden;
+  grid-row: 1;
+  grid-column: 2/4;
+}
+
+.animal-image {
+  width: 100%; 
+  height: 100%; 
+  object-fit: contain;
+  border: solid 5px white;
+}
+
+/* img {
   display: grid;
   grid-row: 1;
   grid-column: 2/4;
   background-size: cover;
   margin-top: 80px;
   border-radius: 15% 15% 0% 0%;
-  height: 330px;
-  width: 600px;
+  height:400px ;
+  width: 400px;
   border: solid 5px white;
 
-}
+} */
 
 .lexicon-description {
   grid-row: 2/3;
