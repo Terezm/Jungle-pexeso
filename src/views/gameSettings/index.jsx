@@ -1,37 +1,17 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-// export const Players = () => {
-//     return (
-// <div>
-//         <h1>
-//         Vyber si pokud hraješ s kamarádem nebo sám.
-//         </h1>
-
-//         <nav>
-//         <Link to="/">Budu hrát sám</Link>
-//         <span> | </span>
-//         <Link to="/">Zahraju si s kamarádem</Link>
-//       </nav>
-//     </div>
-
-//     )
-// }
-
-const GameModeSelection = () => {
-  const history = useNavigateg();
-  const [selectedMode, setSelectedMode] = useState('');
+export const GameSettings = () => {
+  const navigate = useNavigate();
+  const [selectedMode, setSelectedMode] = useState('single');
+  const [selectedSize, setSelectedSize] = useState('4');
 
   const handleModeSelection = (mode) => {
     setSelectedMode(mode);
   };
 
   const handleStartGame = () => {
-    if (selectedMode === 'single') {
-      history.push('/pexeso/small');
-    } else if (selectedMode === 'multiplayer') {
-      history.push('/pexeso/large');
-    }
+    navigate(`/pexeso?mode=${selectedMode}&size=${selectedSize}`);
   };
 
   return (
@@ -61,11 +41,21 @@ const GameModeSelection = () => {
           Hrát s kamarádem
         </label>
       </div>
+      <div>
+        <label>
+          <select
+            value={selectedSize}
+            onChange={(e) => setSelectedSize(e.target.value)}
+          >
+            <option value="4">4x4</option>
+            <option value="6">6x6</option>
+          </select>
+          Velikost pole
+        </label>
+      </div>
       <button onClick={handleStartGame} disabled={!selectedMode}>
         Začít hru
       </button>
     </div>
   );
 };
-
-export default GameModeSelection;
