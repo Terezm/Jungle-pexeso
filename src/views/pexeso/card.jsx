@@ -1,33 +1,23 @@
-import React, { useState } from "react";
-import "./card.css";
+import React from 'react';
+import './card.css';
 
-export const Card = ({ img, switch , onTurn }) => {
-    const [isSwitch, setIsSwitch] = useState(true);
-   
+export const Card = ({ img, onTurn, isSwitched }) => {
+  const className = isSwitched ? 'card switch' : 'card';
 
-    const className = isSwitch ? "card switch" : "card";
-
-    return (
-        <button
-          onClick={() => {
-            onTurn();
-          }}
-          type="button"
-          className={className}
-        >
-                  <div className="card_content">
+  return (
+    <button
+      onClick={() => {
+        onTurn();
+      }}
+      type="button"
+      className={className}
+    >
+      <div className="card_content">
         <div className="card_front">
-          <img
-            src={img}
-            alt=""
-            width="240"
-            height="240"
-            className="img"
-          />
+          <img src={img} alt="" width="240" height="240" className="img" />
         </div>
         <div className="card_back"></div>
       </div>
     </button>
   );
 };
-

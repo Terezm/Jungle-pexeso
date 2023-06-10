@@ -1,6 +1,7 @@
 .pexeso-container {
   display: grid;
   gap: 10px;
+  max-width: 800px;
 }
 
 .game4 {
