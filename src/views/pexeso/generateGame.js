@@ -5,7 +5,13 @@ export const generateGame = (size) => {
   const allCards = [...animals];
   allCards.sort(() => Math.random() - 0.5);
   const cards = allCards.slice(0, numberOfCards);
-  const fieldCards = [...cards, ...cards];
+  const fieldCards = [
+    ...cards.map((card) => ({ ...card })),
+    ...cards.map((card) => ({ ...card })),
+  ];
   fieldCards.sort(() => Math.random() - 0.5);
+  fieldCards.forEach((card) => {
+    card.id = Math.random();
+  });
   return fieldCards;
 };

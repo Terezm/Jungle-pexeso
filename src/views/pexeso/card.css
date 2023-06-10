@@ -1,11 +1,10 @@
-
 .img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-  }
-  
-  .card {
+}
+
+.card {
 	aspect-ratio: 1;
 	width: 100%;
 	padding: 0;
@@ -14,52 +13,49 @@
 	perspective: 62rem;
 	background-color: transparent;
 	cursor: pointer;
-  }
-  
-  .card_content {
+}
+
+.card_content {
 	position: absolute;
 	inset: 0;
 	transform-style: preserve-3d;
 	pointer-events: none;
 	transition-property: transform;
 	transition-duration: 0.5s;
-  }
-  
-  .card_front,
-  .card_back {
+}
+
+.card_front,
+.card_back {
 	position: absolute;
 	inset: 0;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
-  }
-  
-  .card_front {
+}
+
+.card_front {
 	background-color: #bbb;
-  }
-  
-  .card_back {
-	background-color: #c4aeff;
-	color: #b86bff;
+}
+
+.card_back {
+	background: url('./3option.jpg');
+	background-size: cover;
+	background-position: center;
 	font-size: 2.5vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	transform: rotateY(180deg);
 	overflow: hidden;
-  }
-  
-  .card_back::before {
-	content: "pexeso";
-	transform: rotate(45deg);
-  }
-  
-  @media (prefers-reduced-motion: reduce) {
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
 	.card_content {
-	  transition-property: none;
+		transition-property: none;
 	}
-  }
-  
-  .card_switch .card_content {
+}
+
+.card.switch .card_content {
 	transform: rotateY(180deg);
-  }
-  
+}
