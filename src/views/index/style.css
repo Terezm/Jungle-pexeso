@@ -1,0 +1,112 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 1.2em;
+  }
+}
+
+
+
+.desktop {
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-image: url('./frame.svg');
+  border-radius: 20%;
+  margin-bottom: 25px;
+  background-size: cover;
+}
+
+.description {
+  grid-row: 2/3;
+  grid-column: 2/span 2;
+  width: 500px;
+  height: 600px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+  color: rgb(244, 230, 210);
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.sloth {
+  grid-column-start: 4;
+  grid-row: 1;
+  width: 325px;
+  height: 200px;
+  background-image: url('./sloth.png');
+  background-size: cover;
+  border-radius: 20%;
+}
+
+.button_pexeso {
+  grid-column: 2;
+  grid-row: 3;
+  background-color: #56805a;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  height: 2em;
+  width: 10em;
+  margin-top: 9em;
+  margin-left: 4em;
+  text-align: center;
+}
+
+.button_lexikon {
+
+  grid-column: 3;
+  grid-row: 3;
+  background-color: #56805a;
+  color: white;
+  padding: 10px 60px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  height: 2em;
+  width: 10em;
+  margin-top: 9em;
+  margin-right: 4em;
+  border: none;
+
+}
+
+.button_lexikon:hover {
+  background-color: #E5970F;
+
+}
+
+.button_pexeso:hover {
+  background-color: #E5970F;
+
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: white;
+  height: 20px;
+}
+
+.logo {
+  display: inline-block;
+  grid-column: 1;
+  grid-row: span 2;
+  height: 1rem;
+}

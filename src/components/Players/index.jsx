@@ -19,7 +19,7 @@ import { useNavigate } from 'react-router-dom';
 // }
 
 const GameModeSelection = () => {
-  const history = useNavigate();
+  const history = useNavigateg();
   const [selectedMode, setSelectedMode] = useState('');
 
   const handleModeSelection = (mode) => {
