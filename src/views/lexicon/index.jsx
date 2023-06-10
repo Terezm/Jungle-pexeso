@@ -18,7 +18,7 @@ export function Lexicon() {
         <img className="animal-image" src={animal.img} alt={animal.name} />
       </div>
       <div className="lexicon-description">
-        <p>{animal.name}</p>
+        <p className="name">{animal.name}</p>
 
         <p>{animal.description}</p>
         <p>Výskyt: {animal.habitat}</p>
