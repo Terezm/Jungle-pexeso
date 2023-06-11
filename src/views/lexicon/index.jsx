@@ -35,6 +35,7 @@ export function Lexicon() {
         <div className="lexicon-sloth"></div>
         <div className="lexicon-icon_home"></div>
       </div>
-    </div>
+    </div> 
+  
   );
 }
