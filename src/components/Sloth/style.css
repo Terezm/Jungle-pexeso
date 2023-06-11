@@ -1,0 +1,61 @@
+.sloth-container {
+  display: flex;
+  position: fixed;
+  bottom: 20%;
+  left: -100%;
+  transition: left 1s ease-in-out, right 1s ease-in-out;
+}
+
+.sloth-container-right {
+  flex-direction: row-reverse;
+  right: -100%;
+}
+
+.sloth-container-active {
+  left: 0;
+}
+
+.sloth-container-right.sloth-container-active {
+  right: 0;
+}
+
+.sloth-img {
+  width: 200px;
+
+}
+
+.sloth-img-right {
+
+  transform: scaleX(-1);
+}
+
+.bubble {
+  margin-top: 70px;
+  --r: 25px;
+  /* the radius */
+  --t: 30px;
+  /* the size of the tail */
+
+  max-width: 300px;
+  padding: calc(2*var(--r)/3);
+  -webkit-mask:
+    radial-gradient(var(--t) at var(--_d) 0, #0000 98%, #000 102%) var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+    conic-gradient(at var(--r) var(--r), #000 75%, #0000 0) calc(var(--r)/-2) calc(var(--r)/-2) padding-box,
+    radial-gradient(50% 50%, #000 98%, #0000 101%) 0 0/var(--r) var(--r) space padding-box;
+  background: #9ab2a6;
+  color: #fff;
+}
+
+.bubble-left {
+  --_d: 0%;
+  border-left: var(--t) solid #0000;
+  margin-right: var(--t);
+  place-self: start;
+}
+
+.bubble-right {
+  --_d: 100%;
+  border-right: var(--t) solid #0000;
+  margin-left: var(--t);
+  place-self: start;
+}

@@ -1,14 +1,15 @@
-import React from "react";
-import { Card } from "./card";
-import { useSearchParams } from "react-router-dom";
-import "./style.css";
-import { Score } from "../../components/Score";
-import { useGame } from "./useGame";
+import React from 'react';
+import { Card } from './card';
+import { useSearchParams } from 'react-router-dom';
+import './style.css';
+import { Score } from '../../components/Score';
+import { useGame } from './useGame';
+import { Sloth } from '../../components/Sloth';
 
 export const Pexeso = () => {
   const [searchParams] = useSearchParams();
-  const mode = searchParams.get("mode");
-  const size = Number(searchParams.get("size"));
+  const mode = searchParams.get('mode');
+  const size = Number(searchParams.get('size'));
 
   const {
     fieldCards,
@@ -18,6 +19,8 @@ export const Pexeso = () => {
     players,
     currentPlayer,
     match,
+    message,
+    messageDirection,
   } = useGame(mode, size);
 
   return (
@@ -41,6 +44,7 @@ export const Pexeso = () => {
         </div>
         {first?.id} - {second?.id}
       </div>
+      <Sloth message={message} direction={messageDirection} />
     </div>
   );
 };

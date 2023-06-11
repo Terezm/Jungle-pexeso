@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { generateGame } from "./generateGame";
+import { useEffect, useState } from 'react';
+import { generateGame } from './generateGame';
 
 export function useGame(mode, size) {
   const [fieldCards, setFieldCards] = useState([]);
@@ -7,25 +7,36 @@ export function useGame(mode, size) {
   const [first, setFirst] = useState(null);
   const [second, setSecond] = useState(null);
   const [match, setMatch] = useState([]);
+  const [message, setMessage] = useState('');
+  const [messageDirection, setMessageDirection] = useState('left');
+  const [matchSeries, setMatchSeries] = useState(0);
+
+  function sayMessage(text) {
+    setMessage(text);
+    setMessageDirection(Math.random() > 0.5 ? 'left' : 'right');
+  }
+
+  const [playerIndex, setPlayerIndex] = useState(0);
+  const [players, setPlayers] = useState(
+    mode === 'single'
+      ? [{ name: 'Hráč 1', score: 0 }]
+      : [
+          { name: 'Hráč 1', score: 0 },
+          { name: 'Hráč 2', score: 0 },
+        ],
+  );
+  const currentPlayer = players[playerIndex];
 
   // generate initial game setup
   useEffect(() => {
     setFieldCards(generateGame(size));
+    sayMessage(`Ahoj, já jsem Adam. Začíná hráč ${currentPlayer.name}!`);
   }, []);
-
-  const [playerIndex, setPlayerIndex] = useState(0);
-  const [players, setPlayers] = useState(
-    mode === "single"
-      ? [{ name: "Hráč 1", score: 0 }]
-      : [
-          { name: "Hráč 1", score: 0 },
-          { name: "Hráč 2", score: 0 },
-        ]
-  );
 
   function nextPlayer() {
     const nextIndex = (playerIndex + 1) % players.length;
     setPlayerIndex(nextIndex);
+    setMatchSeries(0);
   }
 
   function clearSelection() {
@@ -40,6 +51,10 @@ export function useGame(mode, size) {
     currentPlayer.score += 1;
     setPlayers([...players]);
     clearSelection();
+    setMatchSeries(matchSeries + 1);
+    if (matchSeries === 1) {
+      sayMessage(`Wau, 2 v řadě, ty válíš!`);
+    }
   }
 
   useEffect(() => {
@@ -72,8 +87,6 @@ export function useGame(mode, size) {
     }
   }
 
-  const currentPlayer = players[playerIndex];
-
   return {
     fieldCards,
     first,
@@ -82,5 +95,7 @@ export function useGame(mode, size) {
     players,
     currentPlayer,
     match,
+    message,
+    messageDirection,
   };
 }
