@@ -7,3 +7,26 @@
 .name {
     size: 30px;
 }
+
+.lexicon-left-column {
+    width: 200px;
+    height: 100%;
+    background-image: url('frame.jpg');
+    background-size: cover;
+    border: 5px solid rgba(101, 85, 85, 0.557);
+  font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+    color: burlywood
+  }
+  
+  .lexicon-list {
+    padding: 10px;
+    font-size: 17px;
+    text-align: justify;
+    color: burlywood;
+    padding-left: 20px;
+    line-height: 1.5;
+  }
+  
