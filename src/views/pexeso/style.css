@@ -1,9 +1,12 @@
-.pexeso-container {}
+
 
 .pexeso-split {
   display: grid;
   grid-template-columns: 30% 1fr;
-}
+  
+    background-image: url('./background.svg');
+  }
+
 
 .pexeso-game {
   display: grid;
