@@ -3,24 +3,18 @@
 .lexicon-containter {
   display: grid;
   height: 800px;
-  grid-template-columns: 380px 300px 300px;
-  grid-template-rows: 380px 300px 300px;
   background-image: url('./background.svg');
   background-size: cover;
-
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  grid-template-columns: 30% 1fr;
   flex-wrap: nowrap;
+  padding-top: 40px;
 }
 
 .image-container {
   width: 100%;
   height: 300px; 
   overflow: hidden;
-  grid-row: 1;
-  grid-column: 2/4;
+  max-width: 600px;
 }
 
 .animal-image {
@@ -32,23 +26,10 @@
   box-sizing: border-box;
 }
 
-/* img {
-  display: grid;
-  grid-row: 1;
-  grid-column: 2/4;
-  background-size: cover;
-  margin-top: 80px;
-  border-radius: 15% 15% 0% 0%;
-  height:400px ;
-  width: 400px;
-  border: solid 5px white;
 
-} */
 
 .lexicon-description {
-  grid-row: 2/3;
-  grid-column: 2/span 2;
-  width: 600px;
+  max-width: 600px;
   height: 210px;
   border: 5px solid white;
   border-radius: 0% 0% 10% 10%;
@@ -65,7 +46,6 @@
 }
 
 .lexicon-levy_sloupec {
-  grid-row: 1/-1;
   width: 200px;
   height: 100%;
   background-image: url('./frame.jpg');
@@ -102,5 +82,25 @@
   border-radius: 30% 0% 0% 0%;
   margin-block-start: auto;
   margin-inline-start: auto;
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .animal-selected .lexicon-levy_sloupec {
+    display: none;
+  }
+
+  .lexicon-main {
+    display: none;
+  }
+
+  .animal-selected .lexicon-main {
+    display: block;
+  }
+
+  .lexicon-containter {
+    grid-template-columns: 1fr;
+  }
 
 }
