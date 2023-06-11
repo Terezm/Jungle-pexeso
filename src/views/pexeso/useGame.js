@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { generateGame } from './generateGame';
 
-export function useGame(mode, size) {
+export function useGame(playerNames, size) {
   const [fieldCards, setFieldCards] = useState([]);
 
   const [first, setFirst] = useState(null);
@@ -18,12 +18,7 @@ export function useGame(mode, size) {
 
   const [playerIndex, setPlayerIndex] = useState(0);
   const [players, setPlayers] = useState(
-    mode === 'single'
-      ? [{ name: 'Hráč 1', score: 0 }]
-      : [
-          { name: 'Hráč 1', score: 0 },
-          { name: 'Hráč 2', score: 0 },
-        ],
+    playerNames.map((name) => ({ name, score: 0 })),
   );
   const currentPlayer = players[playerIndex];
 

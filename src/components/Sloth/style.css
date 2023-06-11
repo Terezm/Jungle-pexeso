@@ -4,6 +4,7 @@
   bottom: 20%;
   left: -100%;
   transition: left 1s ease-in-out, right 1s ease-in-out;
+  pointer-events: none;
 }
 
 .sloth-container-right {

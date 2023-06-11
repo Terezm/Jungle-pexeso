@@ -8,8 +8,8 @@ import { Sloth } from '../../components/Sloth';
 
 export const Pexeso = () => {
   const [searchParams] = useSearchParams();
-  const mode = searchParams.get('mode');
   const size = Number(searchParams.get('size'));
+  const playerNames = searchParams.getAll('players');
 
   const {
     fieldCards,
@@ -21,7 +21,7 @@ export const Pexeso = () => {
     match,
     message,
     messageDirection,
-  } = useGame(mode, size);
+  } = useGame(playerNames, size);
 
   return (
     <div className="pexeso-split">
