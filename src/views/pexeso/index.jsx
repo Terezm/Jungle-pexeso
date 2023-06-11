@@ -1,15 +1,17 @@
-import React from 'react';
-import { Card } from './card';
-import { useSearchParams } from 'react-router-dom';
-import './style.css';
-import { Score } from '../../components/Score';
-import { useGame } from './useGame';
-import { Sloth } from '../../components/Sloth';
+import React from "react";
+import { Card } from "./card";
+import { useSearchParams } from "react-router-dom";
+import "./style.css";
+import { Score } from "../../components/Score";
+import { useGame } from "./useGame";
+import { Sloth } from "../../components/Sloth";
+import { useEffect } from "react";
+import { HomeNavigation } from "../../components/HomeNavigation";
 
 export const Pexeso = () => {
   const [searchParams] = useSearchParams();
-  const size = Number(searchParams.get('size'));
-  const playerNames = searchParams.getAll('players');
+  const size = Number(searchParams.get("size"));
+  const playerNames = searchParams.getAll("players");
 
   const {
     fieldCards,
@@ -23,8 +25,17 @@ export const Pexeso = () => {
     messageDirection,
   } = useGame(playerNames, size);
 
+  useEffect(() => {
+    if (match.lenght) {
+      window.onbeforeunload = function () {
+        return "Are you sure you want to navigate away?";
+      };
+    }
+  }, [match.lenght]);
+
   return (
     <div className="pexeso-split">
+      <HomeNavigation />
       <div>
         <Score players={players} />
       </div>

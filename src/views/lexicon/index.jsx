@@ -3,6 +3,7 @@ import "./style.css";
 import { LexiconMenu } from "../../components/LexiconMenu";
 import { useSearchParams } from "react-router-dom";
 import { animals } from "../../components/Animals";
+import { HomeNavigation } from "../../components/HomeNavigation";
 
 export function Lexicon() {
   const [searchParams] = useSearchParams();
@@ -13,6 +14,7 @@ export function Lexicon() {
 
   return (
     <div className="lexicon-containter">
+       <HomeNavigation />
       <div className="lexicon-desktop"></div>
       <div className="image-container">
         <img className="animal-image" src={animal.img} alt={animal.name} />

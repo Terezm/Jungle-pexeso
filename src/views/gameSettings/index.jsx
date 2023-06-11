@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './style.css';
+import { HomeNavigation } from '../../components/HomeNavigation';
 
 export const GameSettings = () => {
   const navigate = useNavigate();
@@ -17,6 +18,7 @@ export const GameSettings = () => {
 
   return (
     <div className="container">
+       <HomeNavigation />
       <div className="choice">
         <h1 className="title">Výběr režimu hry Pexeso</h1>
         <div>
