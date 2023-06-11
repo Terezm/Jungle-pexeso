@@ -1,4 +1,4 @@
-import { animals } from "../../components/Animals";
+import { animals } from '../../components/Animals';
 
 function shuffleArray(array) {
   for (var i = array.length - 1; i > 0; i--) {

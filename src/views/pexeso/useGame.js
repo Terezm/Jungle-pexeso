@@ -47,8 +47,8 @@ export function useGame(playerNames, size) {
     setPlayers([...players]);
     clearSelection();
     setMatchSeries(matchSeries + 1);
-    if (matchSeries === 1) {
-      sayMessage(`Wau, 2 v řadě, ty válíš!`);
+    if (matchSeries >= 1) {
+      sayMessage(`Wau, ${matchSeries + 1} v řadě, ty válíš!`);
     }
   }
 
@@ -62,6 +62,24 @@ export function useGame(playerNames, size) {
       return () => clearTimeout(clearTimer);
     }
   }, [first, second]);
+
+  useEffect(() => {
+    console.log(match.length, fieldCards.length);
+    if (match.length === fieldCards.length && fieldCards.length) {
+      const isDraw =
+        players.length === 2 && players[0].score === players[1].score;
+
+      if (isDraw) {
+        sayMessage('Konec hry, remíza!');
+        return;
+      }
+
+      const winner = players.reduce((prev, current) => {
+        return prev.score > current.score ? prev : current;
+      }, 0);
+      sayMessage(`Konec hry, vyhrál hráč ${winner.name}!`);
+    }
+  }, [match.length, fieldCards.length]);
 
   function handleTurn(card) {
     if (first === null && second === null) {
