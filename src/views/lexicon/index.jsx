@@ -29,8 +29,8 @@ export function Lexicon() {
           <p className="name">{animal.name}</p>
 
           <p>{animal.description}</p>
-          <p>Výskyt: {animal.habitat}</p>
-          <p>Strava: {animal.diet}</p>
+          <p className="name">Výskyt: </p><p>{animal.habitat}</p>
+          <p className="name">Strava:</p> <p>{animal.diet}</p>
         </div>
         <div className="lexicon-sloth"></div>
         <div className="lexicon-icon_home"></div>
