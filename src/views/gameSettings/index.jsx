@@ -1,24 +1,24 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import './style.css';
-import { HomeNavigation } from '../../components/HomeNavigation';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "./style.css";
+import { HomeNavigation } from "../../components/HomeNavigation";
 
 export const GameSettings = () => {
   const navigate = useNavigate();
-  const [playerNames, setPlayerNames] = useState(['Hráč 1']);
-  const [selectedSize, setSelectedSize] = useState('4');
+  const [playerNames, setPlayerNames] = useState(["Hráč 1"]);
+  const [selectedSize, setSelectedSize] = useState("4");
 
   const handleStartGame = () => {
     navigate(
       `/pexeso?${playerNames
         .map((name) => `players=${name}`)
-        .join('&')}&size=${selectedSize}`,
+        .join("&")}&size=${selectedSize}`
     );
   };
 
   return (
     <div className="container">
-       <HomeNavigation />
+      <HomeNavigation />
       <div className="choice">
         <h1 className="title">Výběr režimu hry Pexeso</h1>
         <div>
@@ -43,7 +43,7 @@ export const GameSettings = () => {
                 value="multiplayer"
                 checked={playerNames.length === 2}
                 onChange={() => {
-                  setPlayerNames([...playerNames, 'Player 2']);
+                  setPlayerNames([...playerNames, "Hráč 2"]);
                 }}
               />
               Hrát s kamarádem
@@ -53,7 +53,7 @@ export const GameSettings = () => {
             {playerNames.map((name, index) => {
               return (
                 <label>
-                  Jméno hráče
+                  Jméno hráče:{"  "}
                   <input
                     type="text"
                     value={name}
@@ -64,7 +64,7 @@ export const GameSettings = () => {
                             return e.target.value;
                           }
                           return name;
-                        }),
+                        })
                       );
                     }}
                   />
@@ -74,7 +74,7 @@ export const GameSettings = () => {
           </div>
           <div>
             <label>
-              Velikost pole:{'    '}
+              Velikost pole:{"  "}
               <select
                 className="field-size "
                 value={selectedSize}

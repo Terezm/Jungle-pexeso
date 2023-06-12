@@ -4,9 +4,7 @@
   .title {
     font-size: 50px;
      padding-top: 100px;
-    border-color: aqua;
-    border-width: 20px;
-    border: 1px solid #000;
+  
   }
 
   .choice {
@@ -22,9 +20,6 @@
 
   .choice-table {
     padding-top: 30px;
-    border-color: aqua;
-    border-width: 20px;
-    border: 1px solid #000;
   }
 
 
@@ -40,7 +35,6 @@
 
   
 .choice {
-    border: 1px solid #ccc;
     padding: 20px;
     text-align: center;
   }
