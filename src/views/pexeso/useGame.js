@@ -25,7 +25,9 @@ export function useGame(playerNames, size) {
   // generate initial game setup
   useEffect(() => {
     setFieldCards(generateGame(size));
-    sayMessage(`Ahoj, já jsem Adam. Začíná hráč ${currentPlayer.name}!`);
+    sayMessage(
+      `Ahoj, já jsem Adam. A hraju si strašně rád. Začíná hráč  ${currentPlayer.name} Tak jdeme na to!`,
+    );
   }, []);
 
   function nextPlayer() {
@@ -48,7 +50,11 @@ export function useGame(playerNames, size) {
     clearSelection();
     setMatchSeries(matchSeries + 1);
     if (matchSeries >= 1) {
-      sayMessage(`Wau, ${matchSeries + 1} v řadě, ty válíš!`);
+      sayMessage(
+        `To je parádní hra, právě jsi dal, ${
+          matchSeries + 1
+        } v řadě, ty fakt válíš!`,
+      );
     }
   }
 
@@ -70,14 +76,16 @@ export function useGame(playerNames, size) {
         players.length === 2 && players[0].score === players[1].score;
 
       if (isDraw) {
-        sayMessage('Konec hry, remíza!');
+        sayMessage('Konec hry, je to remíza! Zkusíme dát další hru?');
         return;
       }
 
       const winner = players.reduce((prev, current) => {
         return prev.score > current.score ? prev : current;
       }, 0);
-      sayMessage(`Konec hry, vyhrál hráč ${winner.name}!`);
+      sayMessage(
+        `Konec hry, vyhrál hráč ${winner.name} gratuluju! Zahrajeme si ještě jednou?`,
+      );
     }
   }, [match.length, fieldCards.length]);
 

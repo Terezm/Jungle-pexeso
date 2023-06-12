@@ -18,7 +18,7 @@ export const GameSettings = () => {
 
   return (
     <div className="container">
-       <HomeNavigation />
+      <HomeNavigation />
       <div className="choice">
         <h1 className="title">Výběr režimu hry Pexeso</h1>
         <div>
@@ -32,7 +32,7 @@ export const GameSettings = () => {
                 setPlayerNames([playerNames[0]]);
               }}
             />
-            Hrát sám
+            Hra pro jednoho
           </label>
 
           <div>
@@ -43,10 +43,10 @@ export const GameSettings = () => {
                 value="multiplayer"
                 checked={playerNames.length === 2}
                 onChange={() => {
-                  setPlayerNames([...playerNames, 'Player 2']);
+                  setPlayerNames([...playerNames, 'Hráč 2']);
                 }}
               />
-              Hrát s kamarádem
+              Hra pro dva hráče
             </label>
           </div>
           <div>
@@ -87,7 +87,7 @@ export const GameSettings = () => {
           </div>
           <br />
           <button className="btn" onClick={handleStartGame}>
-            Začít hru
+            Začít hrát
           </button>
         </div>
       </div>
