@@ -1,7 +1,7 @@
-import React from "react";
-import { animals } from "../Animals";
-import { useNavigate, Link } from "react-router-dom";
-import "./style.css";
+import React from 'react';
+import { animals } from '../Animals';
+import { useNavigate, Link } from 'react-router-dom';
+import './style.css';
 
 export const LexiconMenu = () => {
   const navigate = useNavigate();
@@ -11,7 +11,7 @@ export const LexiconMenu = () => {
 
   return (
     <div className="lexicon-left-column">
-      <p>Lexikon zvířat:</p>
+      <p>Lexikon zvířat</p>
       <ul className="lexicon-list">
         {animals.map((animal, index) => (
           <li key={index}>
@@ -20,8 +20,8 @@ export const LexiconMenu = () => {
               to={`/lexicon?index=${index}`}
               onClick={() => viewAnimal(index)}
             >
-              {animal.name}{" "}
-            </Link>{" "}
+              {animal.name}{' '}
+            </Link>{' '}
           </li>
         ))}
       </ul>
