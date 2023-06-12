@@ -48,7 +48,7 @@ export const GameSettings = () => {
                   setPlayerNames([...playerNames, "Hráč 2"]);
                 }}
               />
-              Hrát pro dva
+              Hra pro dva
             </label>
             <br />
           </div>
