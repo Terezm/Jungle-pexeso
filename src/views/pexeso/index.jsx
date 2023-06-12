@@ -25,13 +25,7 @@ export const Pexeso = () => {
     messageDirection,
   } = useGame(playerNames, size);
 
-  useEffect(() => {
-    if (match.lenght) {
-      window.onbeforeunload = function () {
-        return "Are you sure you want to navigate away?";
-      };
-    }
-  }, [match.lenght]);
+
 
   return (
     <div className="pexeso-split">

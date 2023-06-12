@@ -10,9 +10,9 @@ export const LexiconMenu = () => {
   };
 
   return (
-    <div className="lexicon-levy_sloupec">
+    <div className="lexicon-left-column">
       <p>Lexikon zvířat:</p>
-      <ul className="lexicon-odrazkove-seznam">
+      <ul className="lexicon-list">
         {animals.map((animal, index) => (
           <li key={index}>
             <Link
