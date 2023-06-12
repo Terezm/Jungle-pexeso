@@ -17,84 +17,84 @@ export const GameSettings = () => {
   };
 
   return (
-    
-      <div className="container">
-        <HomeNavigation />
-        <div className="choice">
-          <h1 className="title">Nastav si svojí hru</h1>
+    <div className="container">
+      <HomeNavigation />
+      <div className="choice">
+        <h1 className="title">Nastav si svojí hru</h1>
+        <div>
+          <br />
+          <br />
+          <label>
+            <input
+              type="radio"
+              name="mode"
+              value="single"
+              checked={playerNames.length === 1}
+              onChange={() => {
+                setPlayerNames([playerNames[0]]);
+              }}
+            />
+            Hra pro jednoho
+          </label>
+          <br />
           <div>
-            <br />
-            <br />
             <label>
               <input
                 type="radio"
                 name="mode"
-                value="single"
-                checked={playerNames.length === 1}
+                value="multiplayer"
+                checked={playerNames.length === 2}
                 onChange={() => {
-                  setPlayerNames([playerNames[0]]);
+                  setPlayerNames([...playerNames, "Hráč 2"]);
                 }}
               />
-              Hrát sám
+              Hrát pro dva
             </label>
-
-            <div>
-              <label>
-                <input
-                  type="radio"
-                  name="mode"
-                  value="multiplayer"
-                  checked={playerNames.length === 2}
-                  onChange={() => {
-                    setPlayerNames([...playerNames, "Hráč 2"]);
-                  }}
-                />
-                Hrát s kamarádem
-              </label>
-            </div>
-            <div>
-              {playerNames.map((name, index) => {
-                return (
-                  <label>
-                    Jméno hráče:{"  "}
-                    <input
-                      type="text"
-                      value={name}
-                      onChange={(e) => {
-                        setPlayerNames(
-                          playerNames.map((name, i) => {
-                            if (index === i) {
-                              return e.target.value;
-                            }
-                            return name;
-                          })
-                        );
-                      }}
-                    />
-                  </label>
-                );
-              })}
-            </div>
-            <div>
-              <label>
-                Velikost pole:{"  "}
-                <select
-                  className="field-size "
-                  value={selectedSize}
-                  onChange={(e) => setSelectedSize(e.target.value)}
-                >
-                  <option value="4">4x4</option>
-                  <option value="6">6x6</option>
-                </select>
-              </label>
-            </div>
             <br />
-            <button className="btn" onClick={handleStartGame}>
-              Začít hru
-            </button>
           </div>
+          <div>
+            {playerNames.map((name, index) => {
+              return (
+                <label>
+                  Jméno hráče:{"  "}
+                  <input
+                    type="text"
+                    value={name}
+                    onChange={(e) => {
+                      setPlayerNames(
+                        playerNames.map((name, i) => {
+                          if (index === i) {
+                            return e.target.value;
+                          }
+                          return name;
+                        })
+                      );
+                    }}
+                  />
+                </label>
+              );
+            })}
+          </div>
+          <div>
+            <br />
+            <label>
+              Velikost pole:{"  "}
+              <select
+                className="field-size "
+                value={selectedSize}
+                onChange={(e) => setSelectedSize(e.target.value)}
+              >
+                <option value="4">4x4</option>
+                <option value="6">6x6</option>
+              </select>
+            </label>
+          </div>
+          <br />
+          <button className="btn" onClick={handleStartGame}>
+            Začít hru
+          </button>
         </div>
       </div>
-    
+    </div>
   );
 };

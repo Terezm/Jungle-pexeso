@@ -11,6 +11,8 @@
   
   }
 
+
+
   .choice {
     
     display: flex;
@@ -51,7 +53,7 @@ input[type="text"] {
   
 .choice {
     padding: 20px;
-    text-align: center;
+    text-align:center;
   }
   
   .choice label {
@@ -85,7 +87,6 @@ input[type="text"] {
 
 
 
-         .field-size {
-           
+         .field-size {    
         font-size: 30px;
           }
