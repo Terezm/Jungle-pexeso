@@ -24,10 +24,10 @@ export const Sloth = ({ message, direction }) => {
     >
       <img
         className={`sloth-img sloth-img-${direction}`}
-        src="/sloth.jpg"
+        src="/output.png"
         alt="sloth"
       />
-      <div class={`bubble bubble-${direction}`}>{message}</div>
+      <div className={`bubble bubble-${direction}`}>{message}</div>
     </div>
   );
 };

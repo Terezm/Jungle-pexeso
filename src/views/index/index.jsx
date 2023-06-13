@@ -1,6 +1,6 @@
-import React from "react";
-import "./style.css";
-import { Link } from "react-router-dom";
+import React from 'react';
+import './style.css';
+import { Link } from 'react-router-dom';
 
 export function Index() {
   return (
@@ -32,10 +32,10 @@ export function Index() {
         to="/lexicon"
         className="index-button_lexikon"
         style={{
-          whiteSpace: "nowrap",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
+          whiteSpace: 'nowrap',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
         }}
       >
         Lexikon zvířat
