@@ -33,10 +33,10 @@ export const Index = () => {
         to="/lexicon"
         className="index-button_lexikon"
         style={{
-          whiteSpace: "nowrap",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
+          whiteSpace: 'nowrap',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
         }}
       >
         Lexikon zvířat

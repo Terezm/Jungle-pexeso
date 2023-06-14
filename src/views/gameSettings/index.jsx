@@ -1,18 +1,18 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import "./style.css";
-import { HomeNavigation } from "../../components/HomeNavigation";
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import './style.css';
+import { HomeNavigation } from '../../components/HomeNavigation';
 
 export const GameSettings = () => {
   const navigate = useNavigate();
-  const [playerNames, setPlayerNames] = useState(["Hráč 1"]);
-  const [selectedSize, setSelectedSize] = useState("4");
+  const [playerNames, setPlayerNames] = useState(['Hráč 1']);
+  const [selectedSize, setSelectedSize] = useState('4');
 
   const handleStartGame = () => {
     navigate(
       `/pexeso?${playerNames
         .map((name) => `players=${name}`)
-        .join("&")}&size=${selectedSize}`
+        .join('&')}&size=${selectedSize}`,
     );
   };
 
@@ -45,7 +45,7 @@ export const GameSettings = () => {
                 value="multiplayer"
                 checked={playerNames.length === 2}
                 onChange={() => {
-                  setPlayerNames([...playerNames, "Hráč 2"]);
+                  setPlayerNames([...playerNames, 'Hráč 2']);
                 }}
               />
               Hra pro dva
@@ -56,7 +56,7 @@ export const GameSettings = () => {
             {playerNames.map((name, index) => {
               return (
                 <label>
-                  Jméno hráče:{"  "}
+                  Jméno hráče:{'  '}
                   <input
                     type="text"
                     value={name}
@@ -67,7 +67,7 @@ export const GameSettings = () => {
                             return e.target.value;
                           }
                           return name;
-                        })
+                        }),
                       );
                     }}
                   />
@@ -78,7 +78,7 @@ export const GameSettings = () => {
           <div>
             <br />
             <label>
-              Velikost pole:{"  "}
+              Velikost pole:{'  '}
               <select
                 className="field-size "
                 value={selectedSize}
@@ -91,7 +91,7 @@ export const GameSettings = () => {
           </div>
           <br />
           <button className="btn" onClick={handleStartGame}>
-            Začít hru
+            Začít hrát
           </button>
         </div>
       </div>

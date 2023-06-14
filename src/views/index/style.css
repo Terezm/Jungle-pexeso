@@ -36,15 +36,16 @@ html {
 }
 
 .index-description {
-  grid-row: 2/3;
+  display: grid;
+  grid-row: 2/span 2;
   grid-column: 2/span 2;
-  width: 500px;
-  height: 600px;
-  padding: 20px;
+  max-width: 520px;
+  max-height: 600px;
+  padding: 10px;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
-  margin-top: 30px;
+  margin-bottom: 100px;
   color: rgb(244, 230, 210);
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
@@ -62,8 +63,7 @@ html {
 .index-button_pexeso {
   grid-column: 2;
   grid-row: 3;
-  background-color: #56805a;
-  border: none;
+  background-color: #e78e1b;
   color: white;
   font-size: 20px;
   cursor: pointer;
@@ -73,13 +73,16 @@ html {
   margin-top: 9em;
   margin-left: 4em;
   text-align: center;
+  text-decoration: none;
+  border: none;
+  padding: 10px 60px;
+
 }
 
 .index-button_lexikon {
-
   grid-column: 3;
   grid-row: 3;
-  background-color: #56805a;
+  background-color: #e78e1b;
   color: white;
   padding: 10px 60px;
   text-align: center;
@@ -90,17 +93,18 @@ html {
   width: 10em;
   margin-top: 9em;
   margin-right: 4em;
+  text-decoration: none;
   border: none;
 
 }
 
 .index-button_lexikon:hover {
-  background-color: #E5970F;
+  background-color: #2d5f2b;
 
 }
 
 .index-button_pexeso:hover {
-  background-color: #E5970F;
+  background-color: #2d5f2b;
 
 }
 
