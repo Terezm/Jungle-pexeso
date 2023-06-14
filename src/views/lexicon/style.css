@@ -6,7 +6,7 @@
 
 .lexicon-containter {
   display: grid;
-  background-image: url('./background.svg');
+  background-image: url('./img/background.svg');
   background-size: cover;
   grid-template-columns: 30% 1fr;
   flex-wrap: nowrap;
@@ -55,7 +55,7 @@
 .lexicon-sloth {
   grid-column: 3;
   background-size: cover;
-  background-image: url('./sloth.svg');
+  background-image: url('./img/sloth.svg');
   height: 130px;
   width: 150px;
   border-radius: 30% 0% 0% 0%;

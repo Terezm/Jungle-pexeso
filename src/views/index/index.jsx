@@ -1,8 +1,9 @@
 import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
+import { Footer } from "../Footer";
 
-export function Index() {
+export const Index = () => {
   return (
     <div className="index-container">
       <div className="index-desktop">
@@ -41,6 +42,8 @@ export function Index() {
         Lexikon zvířat
       </Link>
       <div className="index-sloth"></div>
+      <Footer/>
     </div>
+    
   );
 }

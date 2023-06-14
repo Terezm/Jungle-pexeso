@@ -3,10 +3,11 @@ import { createRoot } from 'react-dom/client';
 import './style.css';
 import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
 
-import { Index } from './views/index/index';
-import { Lexicon } from './views/lexicon';
+import { Index } from './views/Index/index';
+import { Lexicon } from './views/Lexicon';
 import { GameSettings } from './views/gameSettings';
-import { Pexeso } from './views/pexeso';
+import { Pexeso } from './views/Pexeso';
+import { Footer } from './views/Footer';
 
 const router = createBrowserRouter([
   {

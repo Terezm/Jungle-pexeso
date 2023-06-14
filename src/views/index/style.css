@@ -15,11 +15,11 @@ html {
 }
 
 .index-container {
-  height: 800px;
+
   display: grid;
   grid-template-columns: 1fr 300px 300px 325px;
   grid-template-rows: 1fr 300px 300px 325px;
-  background-image: url('./main.svg');
+  background-image: url('./img/main.svg');
   background-size: cover;
 }
 
@@ -29,7 +29,7 @@ html {
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 4;
-  background-image: url('./frame.svg');
+  background-image: url('./img/frame.svg');
   border-radius: 20%;
   margin-bottom: 25px;
   background-size: cover;
@@ -54,7 +54,7 @@ html {
   grid-row: 1;
   width: 325px;
   height: 200px;
-  background-image: url('./sloth.png');
+  background-image: url('./img/sloth.png');
   background-size: cover;
   border-radius: 20%;
 }

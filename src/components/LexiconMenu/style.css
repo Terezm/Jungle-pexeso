@@ -11,7 +11,7 @@
 .lexicon-left-column {
     width: 200px;
     height: 100%;
-    background-image: url('frame.jpg');
+    background-image: url('img/frame.jpg');
     background-size: cover;
     border: 5px solid rgba(101, 85, 85, 0.557);
   font-size: 25px;

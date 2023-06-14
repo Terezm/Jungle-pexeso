@@ -1,0 +1,27 @@
+.footer-container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(178, 154, 154);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  margin: 0;
+  background-color:rgb(178, 154, 154);
+  padding: 10px 20px;
+}
+
+.names {
+  margin: 0;
+  background-color:rgb(178, 154, 154);
+  padding: 10px 20px;
+}
+
+
+
+

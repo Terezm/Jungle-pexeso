@@ -45,7 +45,7 @@ input[type="text"] {
     align-items: center;
     height: 100vh;
     font-size: 30px;
-    background-image: url('./background.svg');
+    background-image: url('./img/background.svg');
     
    
   }
