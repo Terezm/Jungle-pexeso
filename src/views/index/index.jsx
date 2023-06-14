@@ -9,7 +9,6 @@ export const Index = () => {
       <div className="index-desktop">
         <div className="index-description">
           <h1>Jungle pexeso</h1>
-
           <p>
             Ahoj, vítáme tě na našich stránkách online hry pexesa, která má za
             cíl nejen procvičit tvoji paměť, ale seznámit tě i s různými druhy
@@ -26,25 +25,20 @@ export const Index = () => {
         </div>
       </div>
 
-      <Link to="/game-settings" className="index-button_pexeso">
-        Pexeso
-      </Link>
-      <Link
-        to="/lexicon"
-        className="index-button_lexikon"
-        style={{
-          whiteSpace: 'nowrap',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      >
-        Lexikon zvířat
-      </Link>
+      <div className="button-container">
+      <div className="button-wrapper">
+        <Link to="/game-settings" className="index-button_pexeso">
+          Pexeso
+        </Link>
+        <Link to="/lexicon" className="index-button_lexikon">
+          Lexikon zvířat
+        </Link>
+        </div>
+        
+      </div>
+
       <div className="index-sloth"></div>
-      <Footer/>
+      <Footer />
     </div>
-    
   );
-}
- 
+};
