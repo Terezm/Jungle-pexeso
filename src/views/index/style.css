@@ -43,7 +43,7 @@ html {
   max-height: 600px;
   padding: 10px;
   font-size: 20px;
-  font-weight: bold;
+  /* font-weight: bold; */
   text-align: center;
   margin-bottom: 100px;
   color: rgb(244, 230, 210);
@@ -70,12 +70,13 @@ html {
   border-radius: 8px;
   height: 2em;
   width: 10em;
-  margin-top: 9em;
+  margin-top: 11em;
   margin-left: 4em;
   text-align: center;
   text-decoration: none;
   border: none;
-  padding: 10px 60px;
+  padding: 7px ;
+
 
 }
 
@@ -84,14 +85,14 @@ html {
   grid-row: 3;
   background-color: #e78e1b;
   color: white;
-  padding: 10px 60px;
+  /* padding: 10px 60px; */
   text-align: center;
   font-size: 20px;
   cursor: pointer;
   border-radius: 8px;
   height: 2em;
   width: 10em;
-  margin-top: 9em;
+  margin-top: 11em;
   margin-right: 4em;
   text-decoration: none;
   border: none;
