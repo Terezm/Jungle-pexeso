@@ -3,8 +3,9 @@
 
 
 html {
-  font-family:cursive;
+  font-family: Impact 'Arial Narrow Bold', sans-serif;
 }
+
 *,
 ::after,
 ::before {
@@ -15,8 +16,3 @@ body {
   min-height: 100vh;
   margin: 0;
 }
-
-
-
-
-
