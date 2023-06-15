@@ -4,7 +4,7 @@
   bottom: 0;
   width: 100%;
   background-color: rgb(178, 154, 154);
-  padding: 20px;
+  /* padding: 10px; */
   display: flex;
   justify-content: center;
   align-items: center;

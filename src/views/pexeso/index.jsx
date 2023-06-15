@@ -26,8 +26,6 @@ export const Pexeso = () => {
     messageDirection,
   } = useGame(playerNames, size);
 
-
-
   return (
     <div className="pexeso-split">
       <HomeNavigation />
@@ -35,7 +33,11 @@ export const Pexeso = () => {
         <Score players={players} />
       </div>
       <div className="pexeso-container">
-        <h1>Právě hraje : <br /><br />{currentPlayer.name}</h1>
+        <h1>
+          Právě hraje : <br />
+          <br />
+          {currentPlayer.name}
+        </h1>
         <div className={`pexeso-game game${size}`}>
           {fieldCards.map((card, i) => (
             <Card
@@ -51,7 +53,8 @@ export const Pexeso = () => {
         {first?.id} - {second?.id}
       </div>
       <Sloth message={message} direction={messageDirection} />
-      <Footer/>
+      <br />
+      {/* <Footer /> */}
     </div>
   );
 };

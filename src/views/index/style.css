@@ -49,8 +49,8 @@ html {
 .index-description {
   max-width: 520px;
   max-height: 600px;
-  padding: 10px;
-  font-size: 30px;
+  /* padding: 10px; */
+  font-size: 28px;
   text-align: center;
   margin-bottom: 100px;
   color: rgb(244, 230, 210);
