@@ -34,7 +34,7 @@ export const Pexeso = () => {
         <Score players={players} />
       </div>
       <div className="pexeso-container">
-        <h1>{currentPlayer.name}</h1>
+        <h1>Právě hraje : <br /><br />{currentPlayer.name}</h1>
         <div className={`pexeso-game game${size}`}>
           {fieldCards.map((card, i) => (
             <Card

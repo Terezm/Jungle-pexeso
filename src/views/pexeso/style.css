@@ -1,3 +1,8 @@
+
+body {
+  background-image: url('./img/background.svg');
+}
+
 .pexeso-split {
   display: grid;
   grid-template-columns: 30% 1fr;
@@ -8,7 +13,6 @@
   display: grid;
   max-height: 100vh;
   margin-top: 0 !important;
-  background-image: url('./img/background.jpg');
   background-size: cover;
   grid-template-columns: 30% 1fr;
   flex-wrap: nowrap;
@@ -43,3 +47,5 @@
   position: relative;
   margin-top: 0 !important;
 }
+
+

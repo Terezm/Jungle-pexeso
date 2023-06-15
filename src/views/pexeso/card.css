@@ -37,7 +37,7 @@
 }
 
 .card_back {
-	background: url('./img/3option.jpg');
+	background: url('./img/main.svg');
 	background-size: cover;
 	background-position: center;
 	font-size: 2.5vw;

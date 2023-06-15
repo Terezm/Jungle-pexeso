@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { generateGame } from './generateGame';
 
-export function useGame(playerNames, size) {
+export const useGame = (playerNames, size) => {
   const [fieldCards, setFieldCards] = useState([]);
 
   const [first, setFirst] = useState(null);
@@ -11,7 +11,7 @@ export function useGame(playerNames, size) {
   const [messageDirection, setMessageDirection] = useState('left');
   const [matchSeries, setMatchSeries] = useState(0);
 
-  function sayMessage(text) {
+  const sayMessage = (text) => {
     setMessage(text);
     setMessageDirection(Math.random() > 0.5 ? 'left' : 'right');
   }
@@ -30,18 +30,18 @@ export function useGame(playerNames, size) {
     );
   }, []);
 
-  function nextPlayer() {
+  const nextPlayer = () => {
     const nextIndex = (playerIndex + 1) % players.length;
     setPlayerIndex(nextIndex);
     setMatchSeries(0);
   }
 
-  function clearSelection() {
+  const clearSelection = () => {
     setFirst(null);
     setSecond(null);
   }
 
-  function handleMatch(card) {
+  const handleMatch = (card) => {
     match.push(first.id);
     match.push(card.id);
     setMatch(match);
@@ -89,7 +89,7 @@ export function useGame(playerNames, size) {
     }
   }, [match.length, fieldCards.length]);
 
-  function handleTurn(card) {
+ const  handleTurn = (card) => {
     if (first === null && second === null) {
       // first card clicked
       setFirst(card);
