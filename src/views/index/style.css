@@ -24,13 +24,14 @@ html {
   background-size: cover;
   border-radius: 20%;
 }
+
 .index-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-image: url('./img/main.svg');
+  background-image: url('./img/background2.jpg');
   background-size: cover;
 }
 
@@ -39,19 +40,17 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('./img/frame.svg');
+  /* background-image: url('./img/frame2.jpg'); */
   border-radius: 20%;
   margin-bottom: 25px;
   background-size: cover;
 }
 
-
-
 .index-description {
   max-width: 520px;
   max-height: 600px;
   padding: 10px;
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
   margin-bottom: 100px;
   color: rgb(244, 230, 210);
@@ -70,7 +69,6 @@ html {
   gap: 1em;
 }
 
-
 .index-button_pexeso,
 .index-button_lexikon {
   background-color: #e78e1b;
@@ -82,4 +80,5 @@ html {
   width: 10em;
   text-decoration: none;
   text-align: center;
+  padding-top: 10px;
 }

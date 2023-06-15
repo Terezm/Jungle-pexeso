@@ -1,10 +1,8 @@
 .pexeso-split {
   display: grid;
   grid-template-columns: 30% 1fr;
-  
-    background-image: url('./img/background.svg');
-  }
-
+  background-image: url('./img/background.svg');
+}
 
 .pexeso-container {
   display: grid;
@@ -15,35 +13,27 @@
   grid-template-columns: 30% 1fr;
   flex-wrap: nowrap;
   padding-top: 40px;
-
 }
-
 
 .pexeso-game {
   display: grid;
   gap: 10px;
   max-width: 800px;
-
 }
 
 .game4 {
   grid-template-columns: repeat(4, 1fr);
-
-
 }
 
 .game6 {
   grid-template-columns: repeat(6, 1fr);
   place-items: center;
-
 }
 
 .pexeso-image-container {
   width: 100%;
   aspect-ratio: 1 / 1;
   overflow: hidden;
-
-
 }
 
 .pexeso-image-container img {
@@ -52,5 +42,4 @@
   object-fit: contain;
   position: relative;
   margin-top: 0 !important;
-
 }
