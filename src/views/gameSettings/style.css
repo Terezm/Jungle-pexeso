@@ -50,6 +50,10 @@ input[type="text"] {
    
   }
 
+  .footer,
+  .names {
+    font-size: 15px;
+  }
   
 .choice {
     padding: 20px;

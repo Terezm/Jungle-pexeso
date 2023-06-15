@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './style.css';
 import { HomeNavigation } from '../../components/HomeNavigation';
+import { Footer } from '../Footer';
 
 export const GameSettings = () => {
   const navigate = useNavigate();
@@ -95,6 +96,8 @@ export const GameSettings = () => {
           </button>
         </div>
       </div>
+      < Footer className="footer"/>
     </div>
+    
   );
 };

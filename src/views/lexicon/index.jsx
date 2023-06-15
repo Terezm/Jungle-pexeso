@@ -4,8 +4,9 @@ import { LexiconMenu } from "../../components/LexiconMenu";
 import { useSearchParams } from "react-router-dom";
 import { animals } from "../../components/Animals";
 import { HomeNavigation } from "../../components/HomeNavigation";
+import { Footer } from "../Footer";
 
-export function Lexicon() {
+export const Lexicon = () => {
   const [searchParams] = useSearchParams();
   const index = Number(searchParams.get("index"));
   const animalSelected = searchParams.get("index") != null;
@@ -34,7 +35,9 @@ export function Lexicon() {
         </div>
         <div className="lexicon-sloth"></div>
         <div className="lexicon-icon_home"></div>
+        <Footer/>
       </div>
+      
     </div> 
   
   );

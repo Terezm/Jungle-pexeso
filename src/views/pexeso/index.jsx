@@ -7,6 +7,7 @@ import { useGame } from "./useGame";
 import { Sloth } from "../../components/Sloth";
 import { useEffect } from "react";
 import { HomeNavigation } from "../../components/HomeNavigation";
+import { Footer } from "../Footer";
 
 export const Pexeso = () => {
   const [searchParams] = useSearchParams();
@@ -50,6 +51,7 @@ export const Pexeso = () => {
         {first?.id} - {second?.id}
       </div>
       <Sloth message={message} direction={messageDirection} />
+      <Footer/>
     </div>
   );
 };
