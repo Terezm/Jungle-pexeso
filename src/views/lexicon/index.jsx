@@ -35,7 +35,7 @@ export const Lexicon = () => {
         </div>
         <div className="lexicon-sloth"></div>
         <div className="lexicon-icon_home"></div>
-        <Footer/>
+        {/* <Footer/> */}
       </div>
       
     </div> 

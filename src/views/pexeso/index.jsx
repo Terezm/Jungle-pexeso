@@ -54,6 +54,12 @@ export const Pexeso = () => {
       </div>
       <Sloth message={message} direction={messageDirection} />
       <br />
+      <br />
+      <br />
+      <br />
+      <br />
+     
+  
       {/* <Footer /> */}
     </div>
   );

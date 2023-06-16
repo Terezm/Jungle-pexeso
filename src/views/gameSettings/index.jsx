@@ -18,12 +18,14 @@ export const GameSettings = () => {
   };
 
   return (
+    <div>
     <div className="container">
       <HomeNavigation />
       <div className="choice">
-        <h1 className="title">Nastav si svojí hru</h1>
+        <h1 className="title">Nastav si hru</h1>
+        <img src=".img/frame-new.jpg" alt="" />
         <div>
-          <br />
+          {/* <br /> */}
           <br />
           <label>
             <input
@@ -96,7 +98,9 @@ export const GameSettings = () => {
           </button>
         </div>
       </div>
-      < Footer className="footer"/>
+      
+    </div>
+    {/* < Footer className="footer"/> */}
     </div>
     
   );
