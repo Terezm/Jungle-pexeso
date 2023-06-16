@@ -1,18 +1,18 @@
-import React from "react";
-import { Card } from "./card";
-import { useSearchParams } from "react-router-dom";
-import "./style.css";
-import { Score } from "../../components/Score";
-import { useGame } from "./useGame";
-import { Sloth } from "../../components/Sloth";
-import { useEffect } from "react";
-import { HomeNavigation } from "../../components/HomeNavigation";
-import { Footer } from "../Footer";
+import React from 'react';
+import { Card } from './card';
+import { useSearchParams } from 'react-router-dom';
+import './style.css';
+import { Score } from '../../components/Score';
+import { useGame } from './useGame';
+import { Sloth } from '../../components/Sloth';
+import { useEffect } from 'react';
+import { HomeNavigation } from '../../components/HomeNavigation';
+import { Footer } from '../Footer';
 
 export const Pexeso = () => {
   const [searchParams] = useSearchParams();
-  const size = Number(searchParams.get("size"));
-  const playerNames = searchParams.getAll("players");
+  const size = Number(searchParams.get('size'));
+  const playerNames = searchParams.getAll('players');
 
   const {
     fieldCards,
@@ -33,11 +33,11 @@ export const Pexeso = () => {
         <Score players={players} />
       </div>
       <div className="pexeso-container">
-        <h1>
+        <div className="who-plays">
           Právě hraje : <br />
           <br />
           {currentPlayer.name}
-        </h1>
+        </div>
         <div className={`pexeso-game game${size}`}>
           {fieldCards.map((card, i) => (
             <Card

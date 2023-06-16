@@ -55,24 +55,39 @@ body {
   background-size: cover;
 }
 
+.who-plays {
+  font-size: 30px;
+  margin-top: 200px;
+  font-weight: bold;
+  margin-left: 20px;
+  color: rgb(85, 38, 38);
+}
+
 .pexeso-split {
   display: grid;
-  max-height: 100vh;
-  grid-template-columns: 15% 1fr;
+  max-height: 200px;
+  grid-rows: 200px;
+  grid-column: 200px 200px;
+
   background-image: url('./img/frame.jpg');
   color: blanchedalmond;
+  grid-gap: 10px;
+
 }
 
 .pexeso-container {
   display: grid;
-  max-height: 100vh;
-  margin-top: 0 !important;
+  /*max-height: 100vh;*/
+  /*margin-top: 0 !important;*/
+
   background-image: url('./img/background.jpg');
   background-size: cover;
-  grid-template-columns: 30% 1fr;
+  grid-template-columns: 22% 1fr;
   flex-wrap: nowrap;
   padding-top: 40px;
-  padding-bottom: 40px;
+  /*padding-bottom: 40px;*/
+
+
 }
 
 .pexeso-game {

@@ -14,7 +14,7 @@ export const useGame = (playerNames, size) => {
   const sayMessage = (text) => {
     setMessage(text);
     setMessageDirection(Math.random() > 0.5 ? 'left' : 'right');
-  }
+  };
 
   const [playerIndex, setPlayerIndex] = useState(0);
   const [players, setPlayers] = useState(
@@ -34,12 +34,12 @@ export const useGame = (playerNames, size) => {
     const nextIndex = (playerIndex + 1) % players.length;
     setPlayerIndex(nextIndex);
     setMatchSeries(0);
-  }
+  };
 
   const clearSelection = () => {
     setFirst(null);
     setSecond(null);
-  }
+  };
 
   const handleMatch = (card) => {
     match.push(first.id);
@@ -51,12 +51,12 @@ export const useGame = (playerNames, size) => {
     setMatchSeries(matchSeries + 1);
     if (matchSeries >= 1) {
       sayMessage(
-        `To je parádní hra, právě jsi našel ${
+        `To je parádní hra, právě jsi dal ${
           matchSeries + 1
-        } obrázky za sebou, ty fakt válíš!`,
+        } obrázky v řadě, ty fakt válíš!`,
       );
     }
-  }
+  };
 
   useEffect(() => {
     if (first && second && first.img !== second.img) {
@@ -89,7 +89,7 @@ export const useGame = (playerNames, size) => {
     }
   }, [match.length, fieldCards.length]);
 
- const  handleTurn = (card) => {
+  const handleTurn = (card) => {
     if (first === null && second === null) {
       // first card clicked
       setFirst(card);
@@ -106,7 +106,7 @@ export const useGame = (playerNames, size) => {
       clearSelection();
       setFirst(card);
     }
-  }
+  };
 
   return {
     fieldCards,
@@ -119,4 +119,4 @@ export const useGame = (playerNames, size) => {
     message,
     messageDirection,
   };
-}
+};
