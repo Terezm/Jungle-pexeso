@@ -26,15 +26,14 @@ export const Index = () => {
       </div>
 
       <div className="button-container">
-      <div className="button-wrapper">
-        <Link to="/game-settings" className="index-button_pexeso">
-          Pexeso
-        </Link>
-        <Link to="/lexicon" className="index-button_lexikon">
-          Lexikon zvířat
-        </Link>
+        <div className="button-wrapper">
+          <Link to="/game-settings" className="index-button_pexeso">
+            Pexeso
+          </Link>
+          <Link to="/lexicon" className="index-button_lexikon">
+            Lexikon zvířat
+          </Link>
         </div>
-        
       </div>
 
       <div className="index-sloth"></div>

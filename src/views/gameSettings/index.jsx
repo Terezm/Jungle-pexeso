@@ -22,7 +22,7 @@ export const GameSettings = () => {
     <div className="container">
       <HomeNavigation />
       <div className="choice">
-        <h1 className="title">Nastav si hru</h1>
+        <h1 className="title">Nastavení hry</h1>
         <img src=".img/frame-new.jpg" alt="" />
         <div>
           {/* <br /> */}

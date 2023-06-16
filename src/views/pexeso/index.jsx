@@ -53,11 +53,7 @@ export const Pexeso = () => {
         {first?.id} - {second?.id}
       </div>
       <Sloth message={message} direction={messageDirection} />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+    
      
   
       {/* <Footer /> */}

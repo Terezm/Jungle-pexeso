@@ -21,7 +21,7 @@
   width: 100%;
   height: 100%;
   object-position: center center;
-  border: 1px solid #000;
+  border: 5px solid white;
   border-top-right-radius: 30%;
   border-top-left-radius: 30%;
 
@@ -33,7 +33,7 @@
 
 .lexicon-description {
   max-width: 600px;
-  height: 420px;
+  /* height: 420px; */
   border: 5px solid white;
   border-radius: 0% 0% 10% 10%;
   background-color: whitesmoke;
