@@ -53,9 +53,15 @@
 .lexicon-sloth {
   grid-column: 3;
   background-size: cover;
+<<<<<<< HEAD
   background-image: url('./img/sloth.svg');
   height: 130px;
   width: 150px;
+=======
+  background-image: url('./sloth.png');
+  height: 250px;
+  width: 200px;
+>>>>>>> 907091a (sloth-lexicon-update)
   border-radius: 30% 0% 0% 0%;
   margin-block-start: auto;
   margin-inline-start: auto;
