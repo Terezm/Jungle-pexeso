@@ -7,7 +7,7 @@ export const Score = ({ players }) => {
         return (
           <h1 key={player.name} className="score-item">
             <div className="score-name">{player.name}</div>
-            <div className="score-value"> {player.score}</div>
+            <div className="score-value"> {player.score} skóre</div>
           </h1>
         );
       })}
