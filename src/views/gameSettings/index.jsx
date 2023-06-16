@@ -37,7 +37,7 @@ export const GameSettings = () => {
                 setPlayerNames([playerNames[0]]);
               }}
             />
-            Hra pro jednoho
+            Hra pro jednoho:
           </label>
           <br />
           <div>
@@ -51,7 +51,7 @@ export const GameSettings = () => {
                   setPlayerNames([...playerNames, 'Hráč 2']);
                 }}
               />
-              Hra pro dva
+              Hra pro dva:
             </label>
             <br />
           </div>
