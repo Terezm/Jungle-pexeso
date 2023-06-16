@@ -18,7 +18,7 @@ export const GameSettings = () => {
   };
 
   return (
-    <div>
+    
     <div className="container">
       <HomeNavigation />
       <div className="choice">
@@ -98,10 +98,10 @@ export const GameSettings = () => {
           </button>
         </div>
       </div>
-      
+      <div className="sloth"></div>
     </div>
-    {/* < Footer className="footer"/> */}
-    </div>
+
+    
     
   );
 };
