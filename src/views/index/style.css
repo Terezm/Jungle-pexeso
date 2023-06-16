@@ -50,7 +50,7 @@ html {
   max-width: 520px;
   max-height: 600px;
   /* padding: 10px; */
-  font-size: 24px;
+  font-size: 28px;
   text-align: center;
   margin-bottom: 150px;
   color: rgb(244, 230, 210);
@@ -84,10 +84,10 @@ html {
   padding-top: 5px;
   transition: transform 0.3s ease;
 
-  }
+}
 
-  .index-button_pexeso:hover,
-  .index-button_lexikon:hover {
-    background-color: #45a049;
-    transform: translateY(-5px);
-  }
+.index-button_pexeso:hover,
+.index-button_lexikon:hover {
+  background-color: #45a049;
+  transform: translateY(-5px);
+}
