@@ -3,7 +3,7 @@ import "./style.css";
 import { Link } from "react-router-dom";
 import { Footer } from "../Footer";
 
-export const Index = () => {
+export const MainPage = () => {
   return (
     <div className="index-container">
       <div className="index-desktop">

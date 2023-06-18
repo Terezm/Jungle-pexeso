@@ -3,16 +3,16 @@ import { createRoot } from 'react-dom/client';
 import './style.css';
 import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
 
-import { Index } from './views/Index/index';
+import { MainPage } from './views/MainPage';
 import { Lexicon } from './views/Lexicon';
 import { GameSettings } from './views/gameSettings';
 import { Pexeso } from './views/Pexeso';
-import { Footer } from './views/Footer';
+// import { Footer } from './views/Footer';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Index />,
+    element: <MainPage />,
   },
   {
     path: '/pexeso',
