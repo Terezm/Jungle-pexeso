@@ -9,7 +9,7 @@ import { useEffect } from 'react';
 import { HomeNavigation } from '../../components/HomeNavigation';
 import { Footer } from '../Footer';
 
-export const Pexeso = () => {
+export const PexesoPage = () => {
   const [searchParams] = useSearchParams();
   const size = Number(searchParams.get('size'));
   const playerNames = searchParams.getAll('players');

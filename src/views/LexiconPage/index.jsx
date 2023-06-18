@@ -6,7 +6,7 @@ import { animals } from "../../components/Animals";
 import { HomeNavigation } from "../../components/HomeNavigation";
 import { Footer } from "../Footer";
 
-export const Lexicon = () => {
+export const LexiconPage = () => {
   const [searchParams] = useSearchParams();
   const index = Number(searchParams.get("index"));
   const animalSelected = searchParams.get("index") != null;

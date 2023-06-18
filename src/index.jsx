@@ -4,9 +4,9 @@ import './style.css';
 import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
 
 import { MainPage } from './views/MainPage';
-import { Lexicon } from './views/Lexicon';
 import { GameSettings } from './views/gameSettings';
-import { Pexeso } from './views/Pexeso';
+import { PexesoPage } from './views/PexesoPage';
+import { LexiconPage } from './views/LexiconPage';
 // import { Footer } from './views/Footer';
 
 const router = createBrowserRouter([
@@ -16,11 +16,11 @@ const router = createBrowserRouter([
   },
   {
     path: '/pexeso',
-    element: <Pexeso />,
+    element: <PexesoPage />,
   },
   {
     path: '/lexicon',
-    element: <Lexicon />,
+    element: <LexiconPage />,
   },
   {
     path: '/game-settings',
