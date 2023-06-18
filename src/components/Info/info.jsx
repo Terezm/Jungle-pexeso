@@ -137,12 +137,12 @@ export const Info = () => {
     },
 
     {
-      name: "Kočka domácí",
+      name: "Lenochod",
       description:
-        "Kočka domácí je malý savec ze skupiny koček. Jsou známé svou elegance, nezávislostí a loveckými schopnostmi. Kočky domácí jsou často chovány jako domácí mazlíčci a mají různé plemena s různými vzhledy a charakteristikami.",
+        "Lenochod je fascinující tvor, který se vyznačuje svou jedinečnou adaptací na život ve stromových korunách. Svým vzhledem a způsobem života dokáže okouzlit každého pozorovatele. Má hustou srst, která mu poskytuje ochranu před deštěm a maskování mezi větvemi. Jeho pomalý pohyb a schopnost viset hlavou dolů jsou přizpůsobení pro život ve stromovém prostředí.",
       habitat:
-        "Kočky domácí jsou rozšířeny po celém světě a přizpůsobily se životu v blízkosti lidí. Původně pocházejí z divokých koček, které obývají různá prostředí, včetně lesů, stepí a horských oblastí.",
-      diet: "Kočky domácí jsou masožravci a jejich strava se skládá převážně z masa. V přírodě loví menší zvířata, jako jsou myši a ptáci. V domácnostech jsou krmeny komerčním krmivem pro kočky.",
+        "Lenochodi obývají tropické deštné lesy Střední a Jižní Ameriky. Jsou specializovaní na stromový život a převážnou část svého života tráví visící na větvích. Díky svým silným drápům se pevně přichytávají ke stromům a pohybují se mezi nimi s lehkostí. Tato prostředí jim poskytují dostatek potravy a úkrytu před predátory.",
+      diet: "Lenochodi jsou býložravci a jejich strava se skládá především z listů, výhonků a plodů stromů. Jsou schopni strávit dlouhé hodiny žvýkáním vláknitých potravin, které jsou pro ně typické. Díky svému pomalému metabolismu mají nízkou energetickou potřebu a mohou se spokojit s omezeným množstvím potravy.",
     },
 
     {
